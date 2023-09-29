@@ -1,0 +1,338 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B60069B3-C67B-4AAC-A9C3-EC7BCFD98994}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gomrok1</RootNamespace>
+    <AssemblyName>gomrok1</AssemblyName>
+    <ApplicationIcon>gh.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="kala_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kala_in.Designer.cs">
+      <DependentUpon>kala_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kala_matrook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kala_matrook.Designer.cs">
+      <DependentUpon>kala_matrook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kala_out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kala_out.Designer.cs">
+      <DependentUpon>kala_out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="country.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="country.Designer.cs">
+      <DependentUpon>country.cs</DependentUpon>
+    </Compile>
+    <Compile Include="compony.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="compony.Designer.cs">
+      <DependentUpon>compony.cs</DependentUpon>
+    </Compile>
+    <Compile Include="closed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="closed.Designer.cs">
+      <DependentUpon>closed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="goods.Designer.cs">
+      <DependentUpon>goods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="document.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="document.Designer.cs">
+      <DependentUpon>document.cs</DependentUpon>
+    </Compile>
+    <Compile Include="out_kala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="out_kala.Designer.cs">
+      <DependentUpon>out_kala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rp_barname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rp_barname.Designer.cs">
+      <DependentUpon>rp_barname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rp_cala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rp_cala.Designer.cs">
+      <DependentUpon>rp_cala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rp_country.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rp_country.Designer.cs">
+      <DependentUpon>rp_country.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rp_country_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rp_country_2.Designer.cs">
+      <DependentUpon>rp_country_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rp_ghabz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rp_ghabz.Designer.cs">
+      <DependentUpon>rp_ghabz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rp_khorj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rp_khorj.Designer.cs">
+      <DependentUpon>rp_khorj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rp_name.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rp_name.Designer.cs">
+      <DependentUpon>rp_name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rp_noe_kala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rp_noe_kala.Designer.cs">
+      <DependentUpon>rp_noe_kala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="year.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="year.Designer.cs">
+      <DependentUpon>year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pass_change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pass_change.Designer.cs">
+      <DependentUpon>pass_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="so_ghabz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="so_ghabz.Designer.cs">
+      <DependentUpon>so_ghabz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login asli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login asli.Designer.cs">
+      <DependentUpon>login asli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="kala_in.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>kala_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kala_matrook.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>kala_matrook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kala_out.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>kala_out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="country.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>country.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="compony.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>compony.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="closed.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>closed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="goods.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="document.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>document.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="out_kala.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>out_kala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rp_barname.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rp_barname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rp_cala.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rp_cala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rp_country.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rp_country.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rp_country_2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rp_country_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rp_ghabz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rp_ghabz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rp_khorj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rp_khorj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rp_name.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rp_name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rp_noe_kala.resx">
+      <DependentUpon>rp_noe_kala.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="year.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pass_change.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>pass_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="so_ghabz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>so_ghabz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login asli.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>login asli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z copy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arm2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="edit_f2.png" />
+    <None Include="cancel_f2.png" />
+    <None Include="Copy of save_f2.png" />
+    <None Include="exit.png" />
+    <Content Include="generic_messenger.ico" />
+    <Content Include="gh.ico" />
+    <None Include="Resources\opts_32.ico" />
+    <None Include="Resources\close_32.ico" />
+    <None Include="Resources\add_32.ico" />
+    <None Include="Resources\Computer_Check.png" />
+    <None Include="Resources\print_f2.png" />
+    <None Include="Resources\1_back.jpg" />
+    <None Include="Resources\2_back.jpg" />
+    <None Include="Resources\3_back.jpg" />
+    <None Include="Resources\back.jpg" />
+    <None Include="login.png" />
+    <None Include="new_f2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
